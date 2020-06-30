@@ -1,7 +1,6 @@
 import {cleanConsole, createAll} from './data';
 
 const companies = createAll();
-
 cleanConsole(6, companies);
 console.log('---- EXAMPLE 6 --- ', newObject(companies));
 

@@ -33,7 +33,7 @@ console.log('---- EXAMPLE 4 --- ', AllUsersOfCompany(companies));
 function AllUsersOfCompany(companies) {
   return companies.reduce((acc, company) => {
     return acc.concat(company.users
-        .sort((user1,user2 ) => user1.age >user2.age)
+        .sort((user1, user2) => user1.age > user2.age)
         .map((user) => {
           user.companie = company.name;
           return user;

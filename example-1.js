@@ -45,6 +45,7 @@ export function CompaniesSortByUsers(companies) {
             .map((user) => {
               user.firstName = capitalize(user.firstName);
               user.lastName = capitalize(user.lastName);
+
               return user;
             });
         return company;

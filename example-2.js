@@ -32,7 +32,9 @@ console.log('---- EXAMPLE 2 --- ', CompanyUsersWithCar(companies,true));
 // "users" correspondant au paramètre "hasCar".
 function CompanyUsersWithCar(companies, hasCar) {
   return companies
-      .map((company) =>{
+      .map((company) =>
+
+      {
         company.users = company.users.filter((user) => user.car === hasCar);
         company.usersLength = company.users.length;
         return company;

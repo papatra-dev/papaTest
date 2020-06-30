@@ -13,7 +13,7 @@ console.log('---- EXAMPLE 7 part 7 --- ', 'Put here your function');
 console.log('---- EXAMPLE 7 part 8 --- ', 'Put here your function');
 console.log('---- EXAMPLE 7 part 9 --- ', 'Put here your function');
 
-// -----------------------------------------------------------------------------
+// -------------------  ----------------------------------------------------------
 // INSTRUCCIONES EN ESPAÑOL
 
 // Parte 1: Crear una función tomando como parámetro un "id" de "company" y
