@@ -3,7 +3,7 @@ import {cleanConsole, createAll} from './data';
 const companies = createAll();
 
 cleanConsole(6, companies);
-console.log('---- EXAMPLE 6 --- ', 'Put here your function');
+console.log('---- EXAMPLE 6 --- ', newObject(companies));
 
 // -----------------------------------------------------------------------------
 // INSTRUCCIONES EN ESPAÑOL
@@ -34,5 +34,10 @@ const example = {
   BernardoMinet45: false,
   alinaChef23: true,
 };
-
-console.log(example);
+function newObject(companies) {
+  const object = {};
+  companies.map((user) => user.users.map((person) => {
+    object[person.lastName + person.firstName + person.age] = person.car;
+  }));
+  return object;
+}

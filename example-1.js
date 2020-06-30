@@ -2,7 +2,7 @@ import {createAll, cleanConsole} from './data';
 const companies = createAll();
 
 cleanConsole(1, companies);
-console.log('---- EXAMPLE 1 --- ', 'Put here your function');
+console.log('---- EXAMPLE 1 --- ', CompaniesSortByUsers(companies));
 
 // -----------------------------------------------------------------------------
 // INSTRUCCIONES EN ESPAÑOL
@@ -33,3 +33,26 @@ console.log('---- EXAMPLE 1 --- ', 'Put here your function');
 // le nom et le prénom de chaque "user".
 // Les "companies" doivent être triées par leur nombre de "user" (ordre décroissant)
 // et les "users" de chaque "company" doivent être classés par ordre alphabétique.
+export function capitalize(word) {
+  return word ? word.charAt(0).toUpperCase() + word.slice(1) : '';
+}
+export function CompaniesSortByUsers(companies) {
+  return companies
+      .map((company) => {
+        company.name = capitalize(company.name);
+        company.users
+            .sort((user1, user2) => user1.lastName < user2.lastName ? -1 : +1)
+            .map((user) => {
+              user.firstName = capitalize(user.firstName);
+              user.lastName = capitalize(user.lastName);
+              return user;
+            });
+        return company;
+      })
+      .sort((user1, user2) => user2.usersLength - user1.usersLength);
+}
+
+console.log(CompaniesSortByUsers);
+
+/* DONE*/
+
