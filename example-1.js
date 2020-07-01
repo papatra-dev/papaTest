@@ -2,7 +2,7 @@ import {createAll, cleanConsole} from './data';
 const companies = createAll();
 
 cleanConsole(1, companies);
-console.log('---- EXAMPLE 1 --- ', CompaniesSortByUsers(companies));
+console.log('---- EXAMPLE 1 --- ', companiesSortByUsers(companies));
 
 // -----------------------------------------------------------------------------
 // INSTRUCCIONES EN ESPAÑOL
@@ -36,7 +36,7 @@ console.log('---- EXAMPLE 1 --- ', CompaniesSortByUsers(companies));
 export function capitalize(word) {
   return word ? word.charAt(0).toUpperCase() + word.slice(1) : '';
 }
-export function CompaniesSortByUsers(companies) {
+export function companiesSortByUsers(companies) {
   return companies
       .map((company) => {
         company.name = capitalize(company.name);
@@ -53,7 +53,7 @@ export function CompaniesSortByUsers(companies) {
       .sort((user1, user2) => user2.usersLength - user1.usersLength);
 }
 
-console.log(CompaniesSortByUsers);
+console.log(companiesSortByUsers);
 
 /* DONE*/
 

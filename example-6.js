@@ -38,5 +38,5 @@ function newObject(companies) {
   companies.map((user) => user.users.map((person) => {
     object[person.lastName + person.firstName + person.age] = person.car;
   }));
-  return object;
+  return object;    
 }

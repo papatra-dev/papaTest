@@ -13,10 +13,11 @@ function newObject(companies) {
   return {
     size: size,
     average: average.toFixed(2),
+
+
   };
 }
 
-console.log(newObject(companies));
 
 // -----------------------------------------------------------------------------
 // INSTRUCCIONES EN ESPAÑOL

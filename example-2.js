@@ -2,7 +2,7 @@ import {cleanConsole, createAll} from './data';
 const companies = createAll();
 
 cleanConsole(2, companies);
-console.log('---- EXAMPLE 2 --- ', CompanyUsersWithCar(companies,true));
+console.log('---- EXAMPLE 2 --- ', companyUsersWithCar(companies,true));
 
 // -----------------------------------------------------------------------------
 // INSTRUCCIONES EN ESPAÑOL
@@ -30,7 +30,7 @@ console.log('---- EXAMPLE 2 --- ', CompanyUsersWithCar(companies,true));
 // "users" dont la valeur de l'attribut "car" est égal au paramètre de la
 // fonction "hasCar" et l'attribut "usersLength" doit renseigner le nombre de
 // "users" correspondant au paramètre "hasCar".
-function CompanyUsersWithCar(companies, hasCar) {
+function companyUsersWithCar(companies, hasCar) {
   return companies
       .map((company) =>
 

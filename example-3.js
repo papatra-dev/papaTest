@@ -30,3 +30,4 @@ console.log('---- EXAMPLE 3 --- ', 'Put here your function');
 // et "lastName" des "users" sont en majuscules. Vous devez tester le fonctionnement
 // de cette fonction en important la fonction créée pour "example-1.js".
 
+
